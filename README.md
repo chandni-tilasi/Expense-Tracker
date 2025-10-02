@@ -25,6 +25,17 @@ Ever wondered where all your money goes? This app makes it super easy to track y
 | **Chart.js** | Creates those awesome spending charts |
 | **Docker** | Easy to deploy anywhere |
 
+## 🧠 My Approach
+
+This expense tracker was built with a **user-first, modern web development approach**:
+
+- **Simplicity First**: Clean, intuitive interface that anyone can use without training
+- **Mobile-First**: Responsive design that works perfectly on all devices  
+- **Performance Focused**: Fast loading and smooth interactions using modern React patterns
+- **TypeScript**: Full type safety to prevent bugs and improve developer experience
+- **Component-Based**: Reusable React components for maintainability
+- **Database-First**: PostgreSQL with Knex.js for robust data management
+
 ## 🚀 Quick Start Guide
 
 > **Ready to start tracking your expenses? Let's get you up and running in just a few minutes!**
@@ -41,8 +52,8 @@ Before we begin, make sure you have these installed on your computer:
 
 ```bash
 # Download the project
-git clone <repository-url>
-cd remixV2
+git clone https://github.com/chandni-tilasi/Expense-Tracker.git
+cd Expense-Tracker
 ```
 
 ### Step 2: Install Everything 📦
