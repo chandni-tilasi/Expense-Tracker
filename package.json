@@ -1,0 +1,41 @@
+{
+  "name": "remixv2",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "react-router build",
+    "dev": "react-router dev",
+    "start": "react-router-serve ./build/server/index.js",
+    "typecheck": "react-router typegen && tsc",
+    "db:migrate": "knex migrate:latest",
+    "db:migrate:rollback": "knex migrate:rollback",
+    "db:seed": "knex seed:run",
+    "db:reset": "knex migrate:rollback --all && knex migrate:latest && knex seed:run",
+    "db:make:migration": "knex migrate:make",
+    "db:make:seed": "knex seed:make"
+  },
+  "dependencies": {
+    "@react-router/node": "^7.9.2",
+    "@react-router/serve": "^7.9.2",
+    "chart.js": "^4.5.0",
+    "isbot": "^5.1.31",
+    "knex": "^3.1.0",
+    "pg": "^8.11.3",
+    "react": "^19.1.1",
+    "react-chartjs-2": "^5.3.0",
+    "react-dom": "^19.1.1",
+    "react-router": "^7.9.2"
+  },
+  "devDependencies": {
+    "@react-router/dev": "^7.9.2",
+    "@tailwindcss/vite": "^4.1.13",
+    "@types/node": "^22",
+    "@types/pg": "^8.10.9",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "tailwindcss": "^4.1.13",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.7",
+    "vite-tsconfig-paths": "^5.1.4"
+  }
+}

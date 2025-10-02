@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+html,
+body {
+  @apply bg-white dark:bg-gray-950;
+
+  @media (prefers-color-scheme: dark) {
+    color-scheme: dark;
+  }
+}
+
+/* Custom styles for form inputs */
+.placeholder-black::placeholder {
+  color: #000000 !important;
+  opacity: 0.8;
+}
+
+.placeholder-black::-webkit-input-placeholder {
+  color: #000000 !important;
+  opacity: 0.8;
+}
+
+.placeholder-black::-moz-placeholder {
+  color: #000000 !important;
+  opacity: 0.8;
+}
+
+.placeholder-black:-ms-input-placeholder {
+  color: #000000 !important;
+  opacity: 0.8;
+}
